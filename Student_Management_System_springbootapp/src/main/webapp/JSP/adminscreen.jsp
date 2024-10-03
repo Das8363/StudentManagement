@@ -15,15 +15,19 @@
 
 <style>
 .table-container {
-	background-image: url("https://i.pinimg.com/736x/75/74/86/757486284b6264703711d55d4c902dd0.jpg");
+	background-image:
+		url("https://i.pinimg.com/736x/75/74/86/757486284b6264703711d55d4c902dd0.jpg");
 	width: 100%;
 	min-height: 600px
 }
 </style>
 <script type="text/javascript">
 	function remove() {
-		ducument.fn.action = "/remove";
-		document.action.submit();
+	
+		document.fn.action ="/remove";
+		document.action.submit(); 
+		alert("hello");
+	
 	}
 </script>
 
@@ -193,8 +197,7 @@
 	</section>
 	<section class="table-container" id="view">
 		<h1 class="text-center">Student Info</h1>
-		<form name="fn">
-
+<form name="fn"> 
 			<table class="table table-bordered">
 				<thead>
 					<tr>
@@ -227,7 +230,8 @@
 							<td><input type="radio" name="studentId"
 								value="${student.studentId}">
 							<td>
-								<div class="d-flex justify-content-between pt-2 border border=success">
+								<div
+									class="d-flex justify-content-between pt-2 border border=success">
 									<button class="btn btn-warning">Fees</button>
 									<button class="btn btn-primary">Batch</button>
 									<button class="btn btn-danger" onClick="remove()">Remove</button>
@@ -240,7 +244,6 @@
 
 			</table>
 		</form>
-
 	</section>
 
 
