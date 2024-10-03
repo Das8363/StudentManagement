@@ -10,6 +10,13 @@ public interface StudentService {
 
 
 	public List<Student> viewAllData();
+	
+
+
+	public void onDelete(int studentId);
+
+
+	
 
 
 	

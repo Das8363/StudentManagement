@@ -12,14 +12,20 @@
 	rel="stylesheet"
 	integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
 	crossorigin="anonymous">
-	
-	<style >
-	.table-container{
-	background-image: url("image/aaa.jpg");
+
+<style>
+.table-container {
+	background-image: url("https://i.pinimg.com/736x/75/74/86/757486284b6264703711d55d4c902dd0.jpg");
 	width: 100%;
 	min-height: 600px
+}
+</style>
+<script type="text/javascript">
+	function remove() {
+		ducument.fn.action = "/remove";
+		document.action.submit();
 	}
-	</style>
+</script>
 
 
 </head>
@@ -185,45 +191,55 @@
 		</div>
 
 	</section>
-	<section class="table-container">
-<h1 class="text-center">Student Info</h1>
-		<table border="2" align="center">
-		
-			<thead>
-				<tr>
-					<th>Id</th>
-					<th>Full Name</th>
-					<th>Email</th>
-					<th>Age</th>
-					<th>College Name</th>
-					<th>Course</th>
-					<th>Batch No</th>
-					<th>Batch Mode</th>
-					<th>Paid Fees</th>
-					<th>Action</th>
-				</tr>
-			</thead>
-			<tbody>
-				<c:forEach items="${data}" var="student">
+	<section class="table-container" id="view">
+		<h1 class="text-center">Student Info</h1>
+		<form name="fn">
+
+			<table class="table table-bordered">
+				<thead>
 					<tr>
-
-						<td>${student.studentId}</td>
-						<td>${student.studentFullName}</td>
-						<td>${student.studenEmail}</td>
-						<td>${student.studentAge}</td>
-						<td>${student.studentCollegeName}</td>
-						<td>${student.studentCourse}</td>
-						<td>${student.batchNumber}</td>
-						<td>${student.batchMode}</td>
-						<td>${student.feespaid}</td>
-						<th><a href="delete?rollno=${s.rollno}">Delete</a>||<a
-							href="edit?rollno=${s.rollno}">Edit</a></th>
+						<th>Id</th>
+						<th>Full Name</th>
+						<th>Email</th>
+						<th>Age</th>
+						<th>College Name</th>
+						<th>Course</th>
+						<th>Batch No</th>
+						<th>Batch Mode</th>
+						<th>Paid Fees</th>
+						<th>select</th>
+						<th>Action</th>
 					</tr>
+				</thead>
+				<tbody>
+					<c:forEach items="${data}" var="student">
+						<tr>
 
-				</c:forEach>
-			</tbody>
+							<td>${student.studentId}</td>
+							<td>${student.studentFullName}</td>
+							<td>${student.studenEmail}</td>
+							<td>${student.studentAge}</td>
+							<td>${student.studentCollegeName}</td>
+							<td>${student.studentCourse}</td>
+							<td>${student.batchNumber}</td>
+							<td>${student.batchMode}</td>
+							<td>${student.feespaid}</td>
+							<td><input type="radio" name="studentId"
+								value="${student.studentId}">
+							<td>
+								<div class="d-flex justify-content-between pt-2 border border=success">
+									<button class="btn btn-warning">Fees</button>
+									<button class="btn btn-primary">Batch</button>
+									<button class="btn btn-danger" onClick="remove()">Remove</button>
+								</div>
+							</td>
+						</tr>
 
-		</table>
+					</c:forEach>
+				</tbody>
+
+			</table>
+		</form>
 
 	</section>
 

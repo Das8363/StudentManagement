@@ -31,8 +31,8 @@ public class AdminController {
 
 		if (username.equals("Admin") && password.equals("Admin")) {
 
-			List<Student>list=ss.viewAllData();
-			m.addAttribute("data",list);
+			List<Student> list = ss.viewAllData();
+			m.addAttribute("data", list);
 			return "adminscreen";
 		}
 
@@ -52,9 +52,14 @@ public class AdminController {
 		return "adminscreen";
 
 	}
-	@RequestMapping("/view")
-public String viewAllData(@RequestParam String username,@RequestParam String password) {
-	return "adminscreen";
-		
+
+	@RequestMapping("/remove")
+	public String onRemove(@RequestParam("studentId")int studentId, Model m) {
+		ss.onDelete(studentId);
+		List<Student> list = ss.viewAllData();
+		m.addAttribute("data", list);
+
+		return "adminscreen";
+
 	}
 }

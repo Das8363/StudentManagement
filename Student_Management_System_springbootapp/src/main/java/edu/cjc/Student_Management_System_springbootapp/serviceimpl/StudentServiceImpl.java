@@ -29,4 +29,12 @@ public class StudentServiceImpl implements StudentService {
 	}
 
 	
+	@Override
+	public void onDelete(int studentId) {
+	
+		sr.deleteById(studentId);
+		
+	}
+
+	
 }
