@@ -41,10 +41,11 @@ public class AdminController {
 	}
 
 	@RequestMapping("/enroll_student")
-	public String saveStudent(@ModelAttribute Student student) {
+	public String saveStudent(@ModelAttribute Student student,Model m) {
 
 		ss.saveStudentDetail(student);
-
+		List<Student> list = ss.viewAllData();
+		m.addAttribute("data", list);
 		System.out.println(student);
 		return "adminscreen";
 
@@ -58,5 +59,11 @@ public class AdminController {
 
 		return "adminscreen";
 
+	}
+	
+	@RequestMapping("/fees")
+	public String onFees() {
+		
+		return"feess";
 	}
 }

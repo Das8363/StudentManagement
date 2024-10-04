@@ -26,8 +26,11 @@
 	
 		document.fn.action ="/remove";
 		document.action.submit(); 
-		alert("hello");
 	
+	}
+	function fees() {
+		document.fn.action="/fees";
+		document.action.submit();
 	}
 </script>
 
@@ -232,7 +235,7 @@
 							<td>
 								<div
 									class="d-flex justify-content-between pt-2 border border=success">
-									<button class="btn btn-warning">Fees</button>
+									<button class="btn btn-warning" onClick="fees()">Fees</button>
 									<button class="btn btn-primary">Batch</button>
 									<button class="btn btn-danger" onClick="remove()">Remove</button>
 								</div>
