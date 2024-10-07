@@ -78,6 +78,9 @@
 							<option value="REG-6">REG-6</option>
 							<option value="REG-7">REG-7</option>
 							<option value="REG-8">REG-8</option>
+							<option value="REG-9">REG-9</option>
+							<option value="REG-10">REG-10</option>
+							<option value="REG-11">REG-11</option>
 						</select>
 
 					</div>
