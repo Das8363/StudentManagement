@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>fees</title>
+<title>Batch Shifting</title>
 </head>
 <link
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
@@ -16,7 +16,7 @@
 		<div class="w-50 align-middle border border-info border-3 mt-2"
 			style="height: 570px">
 			<h6 class="p-3 text-primary">
-				A <u>Installment Details:-</u>
+				<u>Batch Changing Details:-</u>
 			</h6>
 
 			<div class="border border-secondary m-2 p-2">

@@ -17,23 +17,26 @@
 .table-container {
 	background-image:
 		url("https://i.pinimg.com/736x/75/74/86/757486284b6264703711d55d4c902dd0.jpg");
-	width: 100%;
-	min-height: 600px
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+table{
+width: 100%;
 }
 </style>
 <script type="text/javascript">
 	function remove() {
-	
-		document.fn.action ="/remove";
-		document.action.submit(); 
-	
+
+		document.fn.action = "/remove";
+		document.action.submit();
+
 	}
 	function fees() {
-		document.fn.action="/fees";
+		document.fn.action = "/fees";
 		document.action.submit();
 	}
 	function batch() {
-		document.fn.action="/batch";
+		document.fn.action = "/batch";
 		document.action.submit();
 	}
 </script>
@@ -203,9 +206,9 @@
 
 	</section>
 	<section class="table-container" id="view">
-		<h1 class="text-center">Student Info</h1>
-<form name="fn"> 
-			<table class="table table-bordered">
+		<h1 class="text-center" style="color: orange">Student Info</h1>
+		<form name="fn">
+			<table class="table-bordered " style="color:white; ">
 				<thead>
 					<tr>
 						<th>Id</th>
