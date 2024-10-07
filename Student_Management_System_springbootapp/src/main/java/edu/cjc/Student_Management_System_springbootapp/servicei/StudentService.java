@@ -16,6 +16,15 @@ public interface StudentService {
 	public void onDelete(int studentId);
 
 
+	public Student getsingleStudent(int studentId);
+
+
+	public void payfees(int studentId, float amount);
+
+
+	public void changebatch(int studentId);
+
+
 	
 
 

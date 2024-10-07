@@ -30,5 +30,5 @@ public class Student {
 	private String studentCourse;
 	private String batchNumber;
 	private String batchMode;
-	private String feespaid;
+	private float feespaid;
 }
