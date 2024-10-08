@@ -85,8 +85,8 @@ public class AdminController {
 	}
 
 	@RequestMapping("/changebatch")
-	public String batchchanging(@RequestParam int studentId,Model m ) {
-		ss.changebatch(studentId);
+	public String batchchanging(@RequestParam int studentId,@RequestParam String batchNumber,Model m ) {
+		ss.changebatch(studentId,batchNumber);
 		List<Student> list = ss.viewAllData();
 		m.addAttribute("data", list);
 		return"adminscreen";

@@ -85,7 +85,7 @@
 
 					</div>
 					<div class="d-flex justify-content-center pt-2">
-						<button class="btn btn-success btn-sm">Batch Change</button>
+						<button class="btn btn-success btn-sm">Batch Shifting</button>
 
 					</div>
 

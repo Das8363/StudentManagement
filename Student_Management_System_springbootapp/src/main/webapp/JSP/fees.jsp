@@ -66,7 +66,7 @@
 					<input type="text" name="studentId" value="${stu.studentId }"
 						hidden="true">
 					<div class="bg-dark p-2 d-flex justify-content-between">
-						<label for="ammount" class="text-info"><b>Enter
+						<label for="amount" class="text-info"><b>Enter
 								Installment<br>Amount
 						</b> </label> <input type="number" name="amount" max="30000">
 

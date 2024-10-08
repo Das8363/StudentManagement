@@ -22,7 +22,8 @@ public interface StudentService {
 	public void payfees(int studentId, float amount);
 
 
-	public void changebatch(int studentId);
+
+	public void changebatch(int studentId, String batchNumber);
 
 
 	
